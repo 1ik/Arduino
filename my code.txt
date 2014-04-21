@@ -1,0 +1,29 @@
+nimas.inn@gmail.com
+
+
+byte leftMotor;
+byte rightMotor;
+void setup() {
+  Serial.begin(9600);
+  rightMotor = 3;
+  leftMotor = 5;
+}
+
+void loop() {
+  
+int sensor[5];
+for(int i=0;i<5;i++)
+{
+  int x= analogRead(i);
+  if(x>680)
+  {
+    sensor[i]=0;
+    Serial.print(sensor[i]);
+  } else {
+    sensor[i]=1;
+    Serial.print(sensor[i]);
+}
+    delay(1000);
+    Serial.println(' ');
+}
+}
