@@ -1,4 +1,3 @@
-
 byte leftMotor=5;
 byte rightMotor=2;
 byte L1=4;
@@ -67,6 +66,10 @@ void slight_left()
   digitalWrite(R2, LOW );
   analogWrite(leftMotor, 80);
   analogWrite(rightMotor, 255);  
+  
+  
+  
+  
   
 }
 
